@@ -1,0 +1,23 @@
+$disparador : 0;
+@mixin H ($sise){
+    transform: translateX($sise);
+}
+
+
+.HOME:hover{
+    .span{
+        @include H(0%)
+    }
+}
+.ABOUT:hover{
+    .span{
+        @include H(0%)
+    }
+}
+
+.PROYECT:hover{
+    .span{
+        @include H(0%)
+    }
+}
+

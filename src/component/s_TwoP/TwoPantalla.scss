@@ -1,0 +1,89 @@
+@import '../../config/general.scss';
+
+.TwoPantalla{
+    position: relative;
+    // padding: 5px 100px;
+    overflow: hidden;
+    h3{
+        font-size:32px;
+        color: $primary;
+    }
+    p{
+        color: $tertiary;
+        font-size:20px;
+    }
+    @include container;
+    figure {
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.title_container{
+    h3{
+    }
+    .efect_conatainer{
+        margin-top:5px;
+        border-radius: 20px;
+        height: 5px;
+        width: 62px;
+        background-color: $security;
+    }
+}
+
+
+.grid{
+    margin-top:10px;
+    display: grid ;
+    grid-template-columns: repeat(3,1fr);
+    /* margin: 0px auto; */
+}
+
+.grid-logo{
+    margin-top:10px;
+    display: grid ;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.figure_tec{
+    width: 136px;
+    height: 184px;
+    margin: 0px auto;
+    text-align: center;
+    .tec_figure{
+        width:100%;
+        height:136px;
+    }
+    & #javascript{
+        padding: 16px;
+    }
+}
+
+.TwoPantalla_Rectangulo2, .TwoPantalla_Rectangulo3{
+    position: absolute;
+    z-index: -1;
+}
+
+.TwoPantalla_Rectangulo2{
+    width: 700px;
+    height:700px;
+    right: -350px;
+    top: -150px;
+}
+
+.TwoPantalla_Rectangulo3{
+    width: 227px;
+    height:238px;
+    right: 249px;
+    top: 69%;
+}
+
+.TwoPantalla_about,.TwoPantalla_content{
+    margin-left: 30px;
+}
+
+.TwoPantalla_about{
+    margin-bottom: 10px;
+}

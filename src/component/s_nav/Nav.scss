@@ -1,0 +1,31 @@
+@import '../../config/colors.scss';
+.Header_nav{
+    width: 100%;
+    .nav_menu{
+        padding: 10px 0px;
+        display: flex;
+        justify-content: flex-end;
+        & li{
+            display: inline-block;
+            width:100px;
+            font-weight: bold;
+            color: $primary;
+            text-align: center;
+            cursor: pointer;
+            overflow: hidden;
+            transition: all 0.35s ease-in-out;
+            & div{
+                margin-top:5px;
+                height:8px;
+                width: 100%;
+                background-color: $security;
+                transform: translateX(-100%);
+                transition: all 0.5s ease-in-out;
+            }
+        }
+
+        & li:nth-child(3){
+            margin-right:100px;
+        }
+    }
+}

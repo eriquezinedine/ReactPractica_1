@@ -1,0 +1,82 @@
+@import '../../config/colors.scss';
+
+
+
+
+.Info{
+    height: 100vh;
+    display: inline-block;
+    box-shadow: 50px 50px 50px 0px rgba(171,182,204,0.2);
+}
+
+.Info_item{
+    text-align: center;
+    .Info_item-img{
+        margin: 0px auto;
+        margin-top: 75px;
+        margin-bottom: 30px;
+        border-radius:100%;
+        height: 200px;
+        width: 200px;
+        background-image: url('../../assets/img/Perfil.png');
+        background-size: 120%;
+        background-position: center 0px;
+        background-repeat: no-repeat;
+    }
+
+    .Info_item-title{
+        font-size:44px;
+        span{
+            color: $security;
+        }
+    }
+
+    .Info_item-description{
+        color: $tertiary;
+        font-size:20px;
+        letter-spacing: 8px;
+    }
+
+    figure{
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        .img-tecLogo{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .Info_item-github{
+        margin-left: 50px;
+    }
+    .Info_item-btn{
+        padding: 20px 10px;
+        border-radius: 10px;
+        background-color: $primary;
+        color: $color1;
+        font-weight: bold;
+        margin:10px;
+        transition: all 0.35s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            background-color: $security;
+            color: $primary;
+        }
+    }
+}
+
+.Info_item:nth-child(2){
+    margin-top: 30px;
+}
+
+.Info_item:nth-child(3){
+    margin-top: 20px;
+    width: 100%;
+    background-color:$primary;
+    color: $backgroundColor;
+    padding: 10px 0px;
+        p{
+            margin: 10px 0px;
+        }
+}
