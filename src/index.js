@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Header from './component/s_header/header'
+// import Menu from './component/s_menu/menu'
+import Info from './component/s_info/Info'
+import './config/colors.scss';
+import './config/fonts.scss';
+import './config/general.scss';
 import reportWebVitals from './reportWebVitals';
+import mouseClick  from './efectJavscript/moveClick'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <>
+    <Info />
+    <Header />
+    {setTimeout(() => {
+      mouseClick()
+    }, 300)}
+  </>,
   document.getElementById('root')
 );
 
